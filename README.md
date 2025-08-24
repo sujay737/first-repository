@@ -8,6 +8,10 @@ Mossy Reviews is a website and social media platform designed to allow people to
 #### Non-Functional Requirements
 Mossy Reviews aims to be a better website than others similar ones since it provides a smoothly run website, have a dislike button for posts to promote more freedom of expression, makes post be able to saved or sent to others showing its reusability and that it has a high scalability (better backend) so more posts, the gallery and data can increase. 
 
+![alt text](image.png)
+
+![alt text](image-1.png)
+
 # TC001
 Test Case Name: Verify User Login
 Preconditions: User must have a registered account. 
@@ -31,3 +35,10 @@ Expected Result: The user is directed to the homepage
 Actual Result: The user remains on the user login page
 Fail: Fail - The user remains on the user login page
 Priority: High
+
+# Data Requirements
+Stored data - 
+Displayed data - 
+Related data - 
+Data types - 
+Data queries - 
