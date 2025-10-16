@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weekly Entertainment Picks</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #2c2e3a, #050a44);
+            color: #fff;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            text-align: center;
+            padding: 2rem 1rem;
+            background: rgba(0, 0, 0, 0.4);
+        }
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.3rem;
+        }
+        header p {
+            font-size: 1.2rem;
+        }
+        .content {
+            max-width: 900px;
+            margin: 2rem auto;
+            background: rgba(0, 0, 0, 0.3);
+            padding: 2rem;
+            border-radius: 12px;
+        }
+        h2 {
+            border-bottom: 2px solid #fff;
+            padding-bottom: 0.5rem;
+        }
+        .movie-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin-top: 1rem;
+        }
+        .movie-card {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 1rem;
+            border-radius: 10px;
+            text-align: center;
+            transition: transform 0.2s;
+        }
+        .movie-card:hover {
+            transform: scale(1.05);
+            background: rgba(255, 255, 255, 0.2);
+        }
+        .movie-card img {
+            max-width: 100%;
+            border-radius: 8px;
+        }
+        footer {
+            text-align: center;
+            padding: 1.5rem;
+            background: rgba(0, 0, 0, 0.4);
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>🎬 Weekly Entertainment Picks</h1>
+    <p>Your guide to the hottest new movies and shows!</p>
+</header>
+
+<div class="content">
+    <h2>Top Movies & Shows This Week</h2>
+    <div class="movie-list">
+        <div class="movie-card">
+            <img src="https://via.placeholder.com/250x150?text=Movie+1" alt="Movie 1 Poster">
+            <h3>Movie Title 1</h3>
+            <p>An action-packed adventure with breathtaking visuals.</p>
+        </div>
+        <div class="movie-card">
+            <img src="https://via.placeholder.com/250x150?text=Show+1" alt="Show 1 Poster">
+            <h3>Show Title 1</h3>
+            <p>Binge-worthy drama that keeps you guessing every episode.</p>
+        </div>
+        <div class="movie-card">
+            <img src="https://via.placeholder.com/250x150?text=Movie+2" alt="Movie 2 Poster">
+            <h3>Movie Title 2</h3>
+            <p>A heartfelt story that will leave you inspired.</p>
+        </div>
+    </div>
+
+    <h2 style="margin-top:2.5rem;">Vote for Your Favourite</h2>
+    <form method="POST">
+    <label for="username">Name:</label>
+    <input type="text" name="username" id="username" required>
+
+    <label for="email">Email:</label>
+    <input type="email" name="email" id="email" required>
+
+    <label for="pick">Favourite pick:</label>
+    <select name="pick" id="pick" required>
+        <option>Movie Title 1</option>
+        <option>Show Title 1</option>
+        <option>Movie Title 2</option>
+    </select>
+
+    <button type="submit">Submit Vote</button>
+</form>
+
+
+    {% if message %}
+        <p style="margin-top:1rem; font-weight:bold;">{{ message }}</p>
+    {% endif %}
+</div>
+
+<footer>
+    © 2025 Weekly Entertainment Picks • Made with ❤️ for movie lovers
+</footer>
+
+</body>
+</html>

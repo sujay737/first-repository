@@ -1,0 +1,176 @@
+<nav>
+<link rel="stylesheet" href="{{ url_for('static', filename='CSS/main.css')}}">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mossy Reviews | Menu</title>
+    <style>
+        body {
+            font-family: "Segoe UI", sans-serif;
+            background-color: #e5e8eb;
+            margin: 0;
+            padding: 0;
+            color: #1b4d3e;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            min-height: 100vh;
+        }
+
+        header {
+            width: 100%;
+            text-align: center;
+            padding: 60px 20px 40px;
+            color: #ffffff;
+            background: linear-gradient(135deg, #115e43 0%, #3a8467 50%, #558c76 100%);
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+            border-bottom-left-radius: 25px;
+            border-bottom-right-radius: 25px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        /* subtle moss texture overlay */
+        header::before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background-image: radial-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+            background-size: 40px 40px;
+            opacity: 0.25;
+            pointer-events: none;
+        }
+
+        header h1 {
+            font-size: 2.6em;
+            margin-bottom: 10px;
+            letter-spacing: 0.5px;
+        }
+
+        header p {
+            font-size: 1.15em;
+            max-width: 650px;
+            margin: 0 auto;
+            color: #eaf6ef;
+        }
+
+        .menu {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 40px;
+            max-width: 950px;
+            margin-top: 50px;
+        }
+
+        .card-link {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .card {
+            background-color: #ffffff;
+            border-radius: 14px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+            width: 260px;
+            padding: 24px;
+            text-align: center;
+            transition: transform 0.25s ease, box-shadow 0.25s ease, background-color 0.25s ease;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 18px rgba(30, 120, 90, 0.25);
+            background-color: #f6faf8;
+        }
+
+        .icon {
+            font-size: 1.7em;
+            margin-bottom: 10px;
+        }
+
+        .card h3 {
+            color: #146b51;
+            font-size: 1.25em;
+            margin-bottom: 10px;
+        }
+
+        .card p {
+            color: #333;
+            font-size: 0.95em;
+        }
+
+        footer {
+            margin-top: 60px;
+            font-size: 0.9em;
+            color: #3a6351;
+            text-align: center;
+            padding-bottom: 20px;
+        }
+
+        /* fade-in animation */
+        .card, header {
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeInUp 0.6s forwards;
+        }
+
+        .card:nth-child(1) { animation-delay: 0.2s; }
+        .card:nth-child(2) { animation-delay: 0.4s; }
+        .card:nth-child(3) { animation-delay: 0.6s; }
+
+        @keyframes fadeInUp {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+    <header>
+            <h1>Welcome to Mossy Reviews</h1>
+            <p>Where stories grow on you 🌿 Dive into honest film and TV reviews, discover weekly favorites, and explore our Mossy world.</p>
+        </header>
+
+        <div class="menu">
+            <a href="index_copy1.html" class="card-link">
+                <div class="card">
+                    <div class="icon">🎬</div>
+                    <h3>Latest Reviews</h3>
+                    <p>Explore our newest takes on trending films and series.</p>
+                </div>
+            </a>
+
+            <a href="index_copy2.html" class="card-link">
+                <div class="card">
+                    <div class="icon">🌟</div>
+                    <h3>Weekly Picks</h3>
+                    <p>See what’s hot this week! Updated every Monday.</p>
+                </div>
+            </a>
+
+            <a href="index_copy3.html" class="card-link">
+                <div class="card">
+                    <div class="icon">📚</div>
+                    <h3>About Us</h3>
+                    <p>Learn more about the Mossy mission and the team behind it.</p>
+                </div>
+            </a>
+        </div>
+
+        <footer>
+            © 2025 Mossy Reviews | All rights reserved
+        </footer>
+    </div>
+</body>
+</html>
+</ul>
+</nav>

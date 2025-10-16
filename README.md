@@ -12,6 +12,8 @@ Mossy Reviews aims to be a better website than others similar ones since it prov
 
 ![alt text](image-1.png)
 
+![alt text](image.png)
+
 # TC001
 Test Case Name: Verify User Login
 Preconditions: User must have a registered account. 

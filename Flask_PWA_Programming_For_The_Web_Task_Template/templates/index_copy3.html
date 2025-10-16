@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mossy Reviews • About Us</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: "Segoe UI", Arial, sans-serif;
+            background: linear-gradient(135deg, #050a44, #2c2e3a);
+            color: #fff;
+        }
+        header {
+            padding: 2rem;
+            text-align: center;
+            background: rgba(0,0,0,0.3);
+        }
+        header h1 {
+            font-size: 3rem;
+            margin: 0;
+        }
+        header p {
+            font-size: 1.2rem;
+            margin-top: .5rem;
+        }
+        .content {
+            max-width: 900px;
+            margin: 2rem auto;
+            background: rgba(0,0,0,0.25);
+            padding: 2rem;
+            border-radius: 14px;
+            line-height: 1.6;
+        }
+        h2 {
+            border-bottom: 2px solid #fff;
+            padding-bottom: .5rem;
+        }
+        .team {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 1.5rem;
+            margin-top: 1rem;
+        }
+        .card {
+            background: rgba(255,255,255,0.1);
+            padding: 1rem;
+            border-radius: 12px;
+            text-align: center;
+            transition: transform .2s;
+        }
+        .card:hover {
+            transform: scale(1.05);
+            background: rgba(255,255,255,0.15);
+        }
+        .card img {
+            width: 120px;
+            height: 120px;
+            object-fit: cover;
+            border-radius: 50%;
+            margin-bottom: .5rem;
+        }
+        footer {
+            text-align: center;
+            padding: 1rem;
+            font-size: 0.9rem;
+            background: rgba(0,0,0,0.3);
+            margin-top: 2rem;
+        }
+        .back-link {
+            display: inline-block;
+            margin-top: 1rem;
+            padding: 0.5rem 1rem;
+            background: #fff;
+            color: #0a21c0;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .back-link:hover {
+            background: #f1f1f1;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Mossy Reviews</h1>
+    <p>Fresh takes on movies, shows & all things entertainment 🌿</p>
+</header>
+
+<div class="content">
+    <h2>Our Story</h2>
+    <p>
+        Mossy Reviews began as a small passion project for film and TV fans.
+        We wanted a space to share opinions, hidden gems, and honest thoughts
+        without the heavy critic jargon. Now we bring you weekly picks, reviews,
+        and recommendations for everything from indie dramas to big-budget blockbusters.
+    </p>
+
+    <h2>Meet the Team</h2>
+    <div class="team">
+        <div class="card">
+            <img src="https://via.placeholder.com/120x120?text=Alex" alt="Sujay">
+            <h3>Sujay Chanduri</h3>
+            <p>Founder & Chief Reviewer — loves witty scripts and late-night cinema marathons.</p>
+        </div>
+        <div class="card">
+            <img src="https://via.placeholder.com/120x120?text=Jamie" alt="Charlie">
+            <h3>Charlie Shao</h3>
+            <p>Streaming sleuth, always digging up must-watch shows on every platform.</p>
+        </div>
+        <div class="card">
+            <img src="https://via.placeholder.com/120x120?text=Riley" alt="David">
+            <h3>David Tong</h3>
+            <p>Design & visuals — adds a spark of creativity to every Mossy Reviews feature.</p>
+        </div>
+    </div>
+
+    <h2>What We Do</h2>
+    <p>
+        From weekly entertainment roundups to thoughtful deep dives,
+        Mossy Reviews celebrates stories in all their forms.
+        We focus on fun, approachable reviews that help you decide what’s worth your watchlist.
+    </p>
+
+    <h2>Join Us</h2>
+    <p>
+        Have a recommendation or want to write with us? Drop a line through our contact form
+        or find us on socials. Grab some popcorn, settle in, and enjoy exploring entertainment
+        with the Mossy Reviews crew!
+    </p>
+
+    <a class="back-link" href="{{ url_for('menu') }}">⬅ Back to Menu</a>
+</div>
+
+<footer>
+    © 2025 Mossy Reviews • Made with 💚 by movie & show lovers
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mossy Reviews - Latest Reviews</title>
+  <style>
+    body {
+      background-color: #e5e7eb;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #f1f3f5;
+      padding: 20px 40px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    header h1 {
+      color: #006b5c;
+      font-size: 1.8rem;
+      margin: 0;
+    }
+
+    .reviews-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 40px;
+      gap: 40px;
+    }
+
+    .post {
+      background-color: white;
+      width: 480px;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+      overflow: hidden;
+      transition: transform 0.3s ease;
+    }
+
+    .post:hover {
+      transform: translateY(-5px);
+    }
+
+    .post-image {
+      width: 100%;
+      height: 280px;
+      background-color: #c4c4c4; /* Placeholder for image */
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.1rem;
+      color: #333;
+      font-weight: bold;
+    }
+
+    .post-header {
+      display: flex;
+      align-items: center;
+      padding: 10px 20px;
+      border-bottom: 1px solid #eee;
+    }
+
+    .avatar {
+      width: 45px;
+      height: 45px;
+      border-radius: 50%;
+      background-color: #d9d9d9; /* Placeholder for avatar */
+      margin-right: 10px;
+    }
+
+    .username {
+      font-weight: bold;
+      color: #333;
+    }
+
+    .post-content {
+      padding: 15px 20px;
+    }
+
+    .post-content p {
+      margin: 8px 0;
+      font-size: 1rem;
+      color: #444;
+    }
+
+    .hashtag {
+      color: #555;
+      font-weight: bold;
+      font-size: 0.95rem;
+    }
+
+    .icons {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      gap: 15px;
+      padding: 10px 20px 20px;
+      font-size: 1.4rem;
+      color: #444;
+    }
+
+    footer {
+      text-align: center;
+      margin: 40px 0 20px;
+      color: #004d40;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>🎬 Mossy Reviews - Latest Posts</h1>
+    <a href="menu.html" style="color:#006b5c; text-decoration:none; font-weight:bold;">⬅ Back to Menu</a>
+  </header>
+
+  <div class="reviews-container">
+    <!-- Post 1 -->
+    <div class="post">
+      <div class="post-image">[ Movie Image Placeholder ]</div>
+      <div class="post-header">
+        <div class="avatar"></div>
+        <div class="username">@thatfilmenthusiast25</div>
+      </div>
+      <div class="post-content">
+        <p class="hashtag">#cinema</p>
+        <p><strong>Only watch it if you like this one thing...</strong></p>
+      </div>
+      <div class="icons">
+        ❤️ 👍 💬 🔁
+      </div>
+    </div>
+
+    <!-- Post 2 -->
+    <div class="post">
+      <div class="post-image">[ Movie Image Placeholder ]</div>
+      <div class="post-header">
+        <div class="avatar"></div>
+        <div class="username">@reeladdict101</div>
+      </div>
+      <div class="post-content">
+        <p class="hashtag">#thriller</p>
+        <p><strong>Plot twists every 5 minutes! Couldn’t look away.</strong></p>
+      </div>
+      <div class="icons">
+        ❤️ 👍 💬 🔁
+      </div>
+    </div>
+
+    <!-- Post 3 -->
+    <div class="post">
+      <div class="post-image">[ Movie Image Placeholder ]</div>
+      <div class="post-header">
+        <div class="avatar"></div>
+        <div class="username">@streamqueen</div>
+      </div>
+      <div class="post-content">
+        <p class="hashtag">#drama</p>
+        <p><strong>Incredible performances, but a bit too long for my taste.</strong></p>
+      </div>
+      <div class="icons">
+        ❤️ 👍 💬 🔁
+      </div>
+    </div>
+  </div>
+
+  <footer>© 2025 Mossy Reviews | All rights reserved</footer>
+</body>
+</html>
