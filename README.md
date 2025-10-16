@@ -76,4 +76,11 @@ Data queries - Querying of emails that have already voted for their favourite mo
 - Use of extension AI to resolve minor issues of the class, 'card', but most of the time was not used. 
 - Use of ChatGPT to generate some text and fix formatting. Used to expand on elements in the 'css'. 
 
+# Instructions of Opening the Website: 
+
+1. Download all the files into Visual Studio Code.
+2. Right click the Flask_PWA_Programming_For_The_Web_Task_Template file and press, 'Open in Integrated Terminal'.
+3. When the terminal fully loads (appears as one or two white lines of code), then type, 'python main.py' (without the apostrophes). 
+4. It will generate a few links but click the first link to follow it to the website. 
+
 # End of Documentation
