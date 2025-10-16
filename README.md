@@ -10,9 +10,9 @@ Mossy Reviews aims to be a better website than others similar ones since it prov
 
 ![alt text](image.png)
 
-![alt text](image-1.png)
+<img width="1424" height="806" alt="image" src="https://github.com/user-attachments/assets/e9e8bab2-78a4-4f6e-a482-f61c08e8fcf6" />
 
-![alt text](image.png)
+<img width="1407" height="794" alt="image" src="https://github.com/user-attachments/assets/c7496405-1e05-4081-a193-8e79f89d1044" />
 
 # TC001
 Test Case Name: Verify User Login
@@ -84,3 +84,4 @@ Data queries - Querying of emails that have already voted for their favourite mo
 4. It will generate a few links but click the first link to follow it to the website. 
 
 # End of Documentation
+
